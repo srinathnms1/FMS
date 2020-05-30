@@ -15,6 +15,8 @@ import OverSpeed from './components/dashboard/OverSpeedComponent';
 import HarshTurn from './components/dashboard/HarshTurnComponent';
 import HarshBreak from './components/dashboard/HarshBreakComponent';
 import DashBoard from './components/dashboard/DashBoardComponent';
+import { Container } from '@material-ui/core';
+import DriverService from './components/dashboard/DriverServiceComponent';
 
 const drawerWidth = 240;
 
@@ -43,9 +45,10 @@ const App = () => {
 
   const menuLinks: ILink[] = [
     { name: 'Dashboard', to: '/' },
-    { name: 'OverSpeed', to: '/overspeed' },
-    { name: 'HarshBreak', to: '/harshBreak' },
-    { name: 'HarshTurn', to: '/harshTurn' },
+    { name: 'Driver Service', to: '/driverservice' },
+    { name: 'Over Speed', to: '/overspeed' },
+    { name: 'Harsh Break', to: '/harshBreak' },
+    { name: 'Harsh Turn', to: '/harshTurn' },
   ];
 
   const classes = useStyles();
@@ -66,15 +69,18 @@ const App = () => {
         </div>
       </Drawer>
 
-      <main className={classes.content}>
-        <Toolbar />
-        <HashRouter>
-          <Route path="/" component={DashBoard} />
-          <Route path="/overspeed" component={OverSpeed} />
-          <Route path="/harshTurn" component={HarshTurn} />
-          <Route path="/harshBreak" component={HarshBreak} />
-        </HashRouter>
-      </main>
+      <Container maxWidth="xl">
+        <main className={classes.content}>
+          <Toolbar />
+          <HashRouter>
+            <Route path="/" component={DashBoard} exact={true} />
+            <Route path="/driverservice" component={DriverService} />
+            <Route path="/overspeed" component={OverSpeed} />
+            <Route path="/harshTurn" component={HarshTurn} />
+            <Route path="/harshBreak" component={HarshBreak} />
+          </HashRouter>
+        </main>
+      </Container>
 
       <Footer />
     </div>
