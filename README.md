@@ -1,3 +1,3 @@
-Application Url: https://fms2020.herokuapp.com/#/
+Application Url: https://srinathnms1.github.io/FMS
 
-Deployement: Heroku
+Deployement: Git Pages
