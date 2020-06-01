@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as d3 from 'd3';
 import { PieArcDatum } from 'd3-shape';
 import { useEffect, useRef } from 'react';
-import { IPieData } from '../models/Dashboard';
+import { IPieData } from '../models/dashboard';
 import { Container } from '@material-ui/core';
 
 interface ILegendComponentProps {

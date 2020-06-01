@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useLocation } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-import { ILink } from '../models/App';
+import { ILink } from '../models/app';
 import { createStyles, Theme, makeStyles } from '@material-ui/core/styles';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';

@@ -1,9 +1,9 @@
 import React, { useRef, useEffect } from 'react';
 import * as d3 from 'd3';
 import { Line, ScaleBand, AxisDomain, AxisScale } from 'd3';
-import { Monthly, Weekly } from '../constants/enums';
+import { Monthly, Weekly } from '../constants/enum';
 import { Container } from '@material-ui/core';
-import { IBarData } from '../models/Dashboard';
+import { IBarData } from '../models/dashboard';
 
 interface IBarComponentProps {
     data: IBarData[];

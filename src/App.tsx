@@ -7,14 +7,14 @@ import List from '@material-ui/core/List';
 import React from 'react';
 import { Route, HashRouter } from 'react-router-dom';
 import './App.css';
-import { ILink } from './models/App';
+import { ILink } from './models/app';
 import Header from './components/HeaderComponent';
 import Footer from './components/FooterComponent';
 import LinksComponent from './components/LinkComponent';
 import OverSpeed from './components/dashboard/OverSpeedComponent';
 import HarshTurn from './components/dashboard/HarshTurnComponent';
 import HarshBreak from './components/dashboard/HarshBreakComponent';
-import DashBoard from './components/dashboard/DashBoardComponent';
+import Dashboard from './containers/DashboardContainer';
 import { Container } from '@material-ui/core';
 import DriverService from './components/dashboard/DriverServiceComponent';
 
@@ -73,7 +73,7 @@ const App = () => {
         <main className={classes.content}>
           <Toolbar />
           <HashRouter>
-            <Route path="/" component={DashBoard} exact={true} />
+            <Route path="/" component={Dashboard} exact={true} />
             <Route path="/driverservice" component={DriverService} />
             <Route path="/overspeed" component={OverSpeed} />
             <Route path="/harshTurn" component={HarshTurn} />

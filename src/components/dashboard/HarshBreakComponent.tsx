@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Bar from '../../core/BarComponent';
-import { Weekly } from '../../constants/enums';
-import { IBarData } from '../../models/Dashboard';
+import { Weekly } from '../../constants/enum';
+import { IBarData } from '../../models/dashboard';
 
 const HarshBreakComponent = () => {
     const barData = [

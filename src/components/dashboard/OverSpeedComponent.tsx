@@ -1,8 +1,8 @@
 import * as React from 'react';
 import Bar from '../../core/BarComponent';
 import DiscreteSlider from '../shared/DiscreteSliderComponent';
-import { Weekly } from '../../constants/enums';
-import { IBarData } from '../../models/Dashboard';
+import { Weekly } from '../../constants/enum';
+import { IBarData } from '../../models/dashboard';
 
 const OverSpeedComponent = () => {
   const barData = [
